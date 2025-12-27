@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For Aditi 💖</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+  body {
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(135deg, #ffd6e8, #e0c3fc);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .lock-screen {
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .lock-screen h2 { color: #ff5fa2; }
+
+  input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 12px;
+    border: 2px solid #ff9ecb;
+    margin: 15px 0;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  button {
+    background: #ff6fae;
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+  }
+
+  .error {
+    color: red;
+    font-size: 14px;
+    display: none;
+  }
+
+  .notebook {
+    display: none;
+    background: #fffafc;
+    width: 90%;
+    max-width: 650px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+  }
+
+  h1 { text-align: center; color: #ff5fa2; }
+
+  .name {
+    text-align: center;
+    font-size: 18px;
+    color: #ff7eb3;
+    margin-bottom: 10px;
+  }
+
+  .emoji-line {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .page {
+    display: none;
+    background: #fff;
+    border-radius: 15px;
+    padding: 18px;
+    border-left: 6px solid #ff9ecb;
+    font-size: 16px;
+    line-height: 1.8;
+    animation: flip 0.6s ease;
+  }
+
+  .page.active { display: block; }
+
+  @keyframes flip {
+    from { transform: rotateY(90deg); opacity: 0; }
+    to { transform: rotateY(0deg); opacity: 1; }
+  }
+
+  .nav { text-align: center; margin-top: 15px; }
+  .footer { text-align: center; font-size: 14px; color: #ff6fae; margin-top: 10px; }
+
+  .fullscreen-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: #ff6fae;
+    color: #fff;
+    border-radius: 50%;
+    padding: 10px 14px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="fullscreen-btn" onclick="toggleFullscreen()">⛶</div>
+
+<div class="lock-screen" id="lockScreen">
+  <h2>Note for my Aditi 💖</h2>
+  <p>Only for you 💕</p>
+  <input type="password" id="passcode" placeholder="****">
+  <button onclick="unlock()">Unlock 💖</button>
+  <div class="error" id="error">Lavde je sangitla ahe te tak MC</div>
+</div>
+
+<div class="notebook" id="notebook">
+
+  <h1>Happy Birthday 🎂</h1>
+  <div class="name">Sweetheart 💖</div>
+  <div class="emoji-line">🌸🦋🥰✨</div>
+
+  <!-- PAGE 1 -->
+  <div class="page active">
+    Mala vatla navta he run hoil me he adhi tyar kela mhnje bday chya khup adhi like 2025 ending pakad 😎  
+    coz hya goshtin na time lagto.. ata he sod ani main goshti vr focus kr
+  </div>
+
+  <!-- PAGE 2 -->
+  <div class="page">
+    Happiest birthday bala.. Aaj cha divas special ahe.. ithe tu tuzha opinion deu nko 😑 nah nhi ye vagere.  
+    Mazya sathi ahe khup so stfu hm. 🥰  
+    Aaj ky ky krnar mg, kahi exciting ??  
+    Me plan krun krun ky kru shakto nehmi sarkha boring sagle yenar celebrate krnar  
+    mla kahi tri different kraycha ahe 😭😭  
+    main motive 
+    <b>tum ko aacha lagna chahiye vo</b>
+  </div>
+
+  <!-- PAGE 3 -->
+  <div class="page">
+    Hmm main point 🔪☠️ tu mla sang apn sarkha bolat asto especially tu jasta ki future mdhe work hoil ki nhi  
+    kaka kaku aiktil ki nhi tuzhi kismat ashi ahe tashi ahe  
+    areyyy but aata present mdhe jagu naaa bro he bgh he  
+    Sagla me tula normally kdhi hi sangu shakto  
+    but kasay na aaj changla divas ahe so sangtoy.  
+    Tu future cha tension Gheun ka jagtiye Aditi...  
+    Ha je kahi pn hoil te bghun gheu ani me ahe na  
+    kahi vatla tr direct sang but aata present mdhe jag.  
+    Jara jasta text zhalay ha 👽🫡
+  </div>
+
+  <!-- PAGE 4 -->
+  <div class="page">
+    I hope tula avdla asel he 😭😭😭😭  
+
+    Stay happy.  
+    Stay smiling.  
+    Ani asaach mazya sobat raha 🦋💞  
+
+    Once again happy..... Birthday to mah..  
+    chotu motu, darling, bal etc etc 😎  
+
+    Chalo jao ab enjoy krlo tumhara din 😘
+  </div>
+
+  <!-- PAGE 5 -->
+  <div class="page">
+    Bal tula sangto je tula vatta like negative thoughts etc
+    te thik ye me ahe sagla positive krun sangto tula
+    but tu kharach khup sundar distes ani bhai tula vatat nhi 
+    tu bhosdyat ja tu saglyat godd porgi ahes ji mla avdte tuch
+    ashi ahes ji mla samjhun ghete 😭 like you know me he adhi navto 
+    bolnar but thike tula kalna garjecha ahe ki samorchyala aplya 
+    baddal ky vattay, <b> kdhi kdhi </b> okiee sweetu... ? 
+  </div>
+
+  <!-- PAGE 6 -->
+  <div class="page">
+    you know maze fav moments ky astat kivha ky hotat
+    jya goshti aplya sobat ghadtat tya, te fc cha athavta ? 
+    apn 3 sobat phirtoyt tithe masti keli thoda vibe songs vr 
+    khalla etc etc like maze expectations nhiyet kahi me he sangaycha 
+    prayetna krtoy dw... 
+    me khush ahe rani... ani jasa adhi sangitla me ki je hoil te bghun gheu 
+    karan problems tr khup yenar ahet ani ek sang dalindar jr problem nhi ale tr 
+    nantr ky sangnar like memo ky asnar amhi mhnlo lagna kraycha ahe ani lagech lavun dila 
+    cheh 😒 nahhh
+    fun asla pahije thoda gand tr mazi pn ashi tashi hoti vichar krun but yeah. 
+    <b> tum sath ho to kuch bhi kr lunga, u are my luck sweetheart 😘 </b>  
+    Thanks for coming into my jindagiiii.. ❤️
+
+    <h1>I LOVE YOU SO MUCH ADITI...</h1>
+  </div>
+
+  <div class="nav">
+    <button onclick="prevPage()">⬅ Piche</button>
+    <button onclick="nextPage()">Aage ➡</button>
+  </div>
+
+  <div class="footer">Made with love ❤️</div>
+</div>
+
+<script>
+  const correctPasscode = "Darling";
+  let currentPage = 0;
+  const pages = document.querySelectorAll(".page");
+
+  function unlock() {
+    const entered = document.getElementById("passcode").value;
+    if (entered === correctPasscode) {
+      document.getElementById("lockScreen").style.display = "none";
+      document.getElementById("notebook").style.display = "block";
+    } else {
+      document.getElementById("error").style.display = "block";
+    }
+  }
+
+  function showPage(index) {
+    pages.forEach(p => p.classList.remove("active"));
+    pages[index].classList.add("active");
+  }
+
+  function nextPage() {
+    if (currentPage < pages.length - 1) {
+      currentPage++;
+      showPage(currentPage);
+    }
+  }
+
+  function prevPage() {
+    if (currentPage > 0) {
+      currentPage--;
+      showPage(currentPage);
+    }
+  }
+
+  function toggleFullscreen() {
+    if (!document.fullscreenElement) {
+      document.documentElement.requestFullscreen();
+    } else {
+      document.exitFullscreen();
+    }
+  }
+</script>
+
+</body>
+</html>
